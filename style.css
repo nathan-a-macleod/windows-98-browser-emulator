@@ -22,11 +22,11 @@ body{
   min-width: 10px;
 }
 
-#currentApplication{
+.currentApplication{
   position: absolute;
   bottom: 0;
   margin: 2px;
-  margin-left: 80px;
+  margin-left: 70px;
   font-weight: bold;
 }
 
@@ -35,36 +35,29 @@ body{
   min-width: 25px;
 }
 
-#fileManager{
+#cadSoftwareWindow, #readmeWindow{
   width: 80%;
   height: 90vh;
   margin: auto;
   margin-top: 2.5vh;
 }
 
-#fileManager > .window-body > fieldset, #fileManager > .window-body > .tree-view{
-  margin-top: 5px;
-}
-
-#fileManager > .window-body > #menu{
-  height: 15px;
-  padding-top: 2px;
-}
-
-#fileManager > .window-body > #address{
-  height: 15px;
-  padding-top: 2px;
-}
-
-#fileManager > .window-body > #address > select{
-  width: 92%;
-}
-
-#fileManager > .window-body > #files{
-  overflow-y: scroll;
-  max-height: 70vh;
-}
-
 .canvas{
   min-width: 100vw !important;
+}
+
+.verticalBar{
+  width: 4px;
+  height: 20px;
+  background: #c0c0c0;
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -1px -1px #ffffff, inset 1px 1px #0a0a0a;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 3.5px;
+  margin-left: 58px;
+  border-radius: 5px;
+}
+
+#readmeFile{
+  margin-left: 185px;
 }

@@ -14,7 +14,7 @@ scene.add(cameraPivot);
 var renderer = new THREE.WebGLRenderer({antialias: false});
 renderer.setSize(window.innerWidth * 0.785, window.innerHeight * 0.85);
 renderer.setPixelRatio(0.8)
-document.getElementById('autoCadWindow').appendChild(renderer.domElement);
+document.getElementById('cadSoftwareWindow').appendChild(renderer.domElement);
 
 var geometry = new THREE.BoxGeometry();
 var material = new THREE.MeshPhongMaterial({color: 0x00ff00});
@@ -41,3 +41,14 @@ function animate() {
 }
 
 animate();
+
+// Stuff For The menus and minimising & maximising files:
+document.getElementById('readmeFile').addEventListener('click', function(){
+  document.getElementById('readmeWindow').style.display = "block";
+  document.getElementById('cadSoftwareWindow').style.display = "none";
+});
+
+document.getElementById('autocadFile').addEventListener('click', function(){
+  document.getElementById('readmeWindow').style.display = "none";
+  document.getElementById('cadSoftwareWindow').style.display = "block";
+});

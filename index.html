@@ -10,24 +10,39 @@
     <link rel="stylesheet" href="https://unpkg.com/98.css" />
   </head>
   <body>
-    <div class="window" id="fileManager">
+    <div class="window" id="cadSoftwareWindow">
       <div class="title-bar">
-        <div class="title-bar-text">AutoCAD Release 14</div>
+        <div class="title-bar-text">CAD Software</div>
         <div class="title-bar-controls">
           <button aria-label="Minimize"></button>
           <button aria-label="Maximize"></button>
           <button aria-label="Close"></button>
         </div>
       </div>
-      <div class="window-body" id="autoCadWindow">
+      <div class="window-body" id="cadApp">
         <!-- In the app.js file, a THREE.js 3D canvas is created in here so we don't need to put anything else there -->
+      </div>
+    </div>
+    
+    <div class="window" style="display: none;" id="readmeWindow">
+      <div class="title-bar">
+        <div class="title-bar-text">README.txt</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body" id="readmeFileWindow">
+        <p>This is the readme file.</p>
       </div>
     </div>
     
     <button disabled id="bottomPanel">
       <button id="startButton">Start</button>
-      
-      <button id="currentApplication">AutoCAD Release 14</button>
+      <div class="verticalBar"></div>
+      <button class="currentApplication" id="autocadFile">CAD Software</button>
+      <button class="currentApplication" id="readmeFile">README.txt</button>
     </button>
   </body>
   
