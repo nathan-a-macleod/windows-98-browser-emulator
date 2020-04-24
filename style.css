@@ -7,6 +7,15 @@ body{
   text-decoration: underline;
 }
 
+textarea {
+  resize: none;
+}
+
+#text20{
+  width: 78.5vw;
+  height: 85vh;
+}
+
 #bottomPanel{
   width: 100vw;
   position: absolute;
@@ -42,6 +51,11 @@ body{
   margin-top: 2.5vh;
 }
 
+canvas{
+  display: block;
+  margin: auto;
+}
+
 .canvas{
   min-width: 100vw !important;
 }
@@ -59,5 +73,5 @@ body{
 }
 
 #readmeFile{
-  margin-left: 185px;
+  margin-left: 175px;
 }

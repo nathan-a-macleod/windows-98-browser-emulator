@@ -1,4 +1,5 @@
 var scene = new THREE.Scene();
+scene.background = new THREE.Color(0x737373);
 var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 camera.aspect = window.innerWidth * 0.785, window.innerHeight * 0.85;
 camera.position.z = 2;
@@ -17,7 +18,7 @@ renderer.setPixelRatio(0.8)
 document.getElementById('cadSoftwareWindow').appendChild(renderer.domElement);
 
 var geometry = new THREE.BoxGeometry();
-var material = new THREE.MeshPhongMaterial({color: 0x00ff00});
+var material = new THREE.MeshLambertMaterial({color: 0x666666});
 var cube = new THREE.Mesh(geometry, material);
 cube.rotation.y += 0.5;
 scene.add(cube);
