@@ -1,0 +1,48 @@
+body{
+  background-color: #0d7173;
+  margin: 0px;
+}
+
+.underlined{
+  text-decoration: underline;
+}
+
+#bottomPanel{
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  height: 27px;
+}
+
+#startButton{
+  position: absolute;
+  bottom: 0;
+  margin: 2px;
+  font-weight: bold;
+  min-width: 10px;
+}
+
+#currentApplication{
+  position: absolute;
+  bottom: 0;
+  margin: 2px;
+  margin-left: 80px;
+  font-weight: bold;
+}
+
+.currentApplicationButtons{
+  box-shadow: none !important;
+  min-width: 25px;
+}
+
+#ieWindow{
+  width: 80%;
+  height: 90vh;
+  margin: auto;
+  margin-top: 2.5vh;
+}
+
+#ieWindow > .window-body > #menu{
+  height: 15px;
+  padding-top: 7.5px;
+}
