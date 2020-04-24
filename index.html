@@ -10,34 +10,28 @@
     <link rel="stylesheet" href="https://unpkg.com/98.css" />
   </head>
   <body>
-    <div class="window" id="ieWindow">
+    <div class="window" id="fileManager">
       <div class="title-bar">
-        <div class="title-bar-text">Google - Microsoft Internet Explorer</div>
+        <div class="title-bar-text">AutoCAD Release 14</div>
         <div class="title-bar-controls">
           <button aria-label="Minimize"></button>
           <button aria-label="Maximize"></button>
           <button aria-label="Close"></button>
         </div>
       </div>
-      <div class="window-body">
-        <fieldset id="menu">
-          <button class="currentApplicationButtons"><span class="underlined">F</span>ile</button>
-          <button class="currentApplicationButtons"><span class="underlined">E</span>dit</button>
-          <button class="currentApplicationButtons"><span class="underlined">V</span>iew</button>
-          <button class="currentApplicationButtons">F<span class="underlined">a</span>vorites</button>
-          <button class="currentApplicationButtons"><span class="underlined">T</span>ools</button>
-          <button class="currentApplicationButtons"><span class="underlined">H</span>elp</button>
-        </fieldset>
+      <div class="window-body" id="autoCadWindow">
+        <!-- In the app.js file, a THREE.js 3D canvas is created in here so we don't need to put anything else there -->
       </div>
     </div>
     
     <button disabled id="bottomPanel">
       <button id="startButton">Start</button>
       
-      <button id="currentApplication">Google - Microsoft Internet Explorer</button>
+      <button id="currentApplication">AutoCAD Release 14</button>
     </button>
   </body>
   
-  <script>
-  </script>
+  <script type="text/javascript" src="three.js"></script>
+  <script type="text/javascript" src="cameraOrbit.js"></script>
+  <script type="text/javascript" src="app.js"></script>
 </html>

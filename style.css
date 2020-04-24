@@ -35,14 +35,36 @@ body{
   min-width: 25px;
 }
 
-#ieWindow{
+#fileManager{
   width: 80%;
   height: 90vh;
   margin: auto;
   margin-top: 2.5vh;
 }
 
-#ieWindow > .window-body > #menu{
+#fileManager > .window-body > fieldset, #fileManager > .window-body > .tree-view{
+  margin-top: 5px;
+}
+
+#fileManager > .window-body > #menu{
   height: 15px;
-  padding-top: 7.5px;
+  padding-top: 2px;
+}
+
+#fileManager > .window-body > #address{
+  height: 15px;
+  padding-top: 2px;
+}
+
+#fileManager > .window-body > #address > select{
+  width: 92%;
+}
+
+#fileManager > .window-body > #files{
+  overflow-y: scroll;
+  max-height: 70vh;
+}
+
+.canvas{
+  min-width: 100vw !important;
 }
