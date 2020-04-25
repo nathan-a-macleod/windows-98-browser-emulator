@@ -54,6 +54,7 @@ textarea {
 canvas{
   display: block;
   margin: auto;
+  margin-top: -5px;
 }
 
 .canvas{
@@ -73,5 +74,54 @@ canvas{
 }
 
 #readmeFile{
-  margin-left: 175px;
+  margin-left: 156px;
+}
+
+#blendTopMenu, #blendMiddleMenu1, #blendMiddleMenu2, #blendBottomMenu{
+  position: absolute;
+  margin-top: -0.8vh;
+  margin-left: -0.8vh;
+  width: 79.7vw;
+}
+
+#blendMiddleMenu1{
+  margin-top: 50vh;
+  background-color: #9a9c86;
+}
+
+#blendMiddleMenu2{
+  margin-top: 53vh;
+  background-color: #808080;
+}
+
+#blendBottomMenu{
+  margin-top: 56vh;
+  background-color: #494949;
+  height: 30vh;
+}
+
+#blendIButton, #blendScreen, #blendScene, p{
+  position: absolute;
+  margin-top: -0.8vh;
+  margin-left: -0.8vh;
+  min-width: 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#blendMenuText{
+  margin-left: 340px;
+  margin-top: -2px;
+  font-size: 11px;
+}
+
+#blendScreen, #blendScene{
+  font-size: 11px;
+  margin-left: 30px;
+  width: 150px;
+  text-align: left;
+}
+
+#blendScene{
+  margin-left: 180px;
 }
